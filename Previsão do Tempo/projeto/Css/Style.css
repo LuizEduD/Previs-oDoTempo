@@ -1,0 +1,99 @@
+/* Comentário em CSS */
+
+@font-face {
+  font-family: "Iceberg";
+  src: url("/Fonte/Iceberg-Regular.ttf") format("woff2"),
+    url("/Fonte/Iceberg-Regular.ttf") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Iceberg;
+}
+
+/*------------------------------------------------------------------*/
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  /*iniciando propriedades do Display Flex, lembrando que não dá pra utilizar nenhuma abaixo sem o "Display: Flex"*/
+  justify-content: center; /* Alinhamento do Eixo Horizontal */ 
+  align-items: center; /* Alinhamento do Eixo Vertical */
+  /* tudo agora centralizado */
+  background-image: url("https://source.unsplash.com/random/3840x2160/?weather/?forecast/");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+}
+
+.caixa-maior {
+    background: black;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    width: 95%;
+    max-width: 450px;
+
+}
+
+.input-cidade{
+    border: none; 
+    outline: none; /* Borda Azul que normalmente fica no interior cobrindo a caixa de pesquisa */  
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #7c7c7c2b;
+    color: white;
+    width: calc(100% - 100px) ;
+}
+
+.botao-busca {
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 13px;
+}
+
+.img-busca {
+    width: 17px;
+}
+
+
+.caixa-media {
+    margin-top: 30px;
+}
+
+.cidade {
+    color: white;
+    font-size: 28px;
+    font-weight: 500 ;
+}
+
+.temp {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+.caixa-menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.texto-previsao {
+    color: white;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+.umidade {
+    color: white ;
+    margin-top: 20px;
+}
